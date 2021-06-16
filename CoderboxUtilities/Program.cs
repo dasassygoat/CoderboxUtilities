@@ -4,6 +4,8 @@ using System.Linq;
 using System.Net;
 using System.Text.RegularExpressions;
 
+using CoderboxLibrary;
+
 namespace CoderboxUtilities
 {
     class Program
@@ -33,6 +35,7 @@ namespace CoderboxUtilities
                     foreach (Computer cmp in computers)
                     {
                         Console.WriteLine($"ComputerName: {cmp.GetComputerName()} IP: {cmp.GetIpAddress().ToString()}");
+                        // write to somewhere
                     }
                 }
 
