@@ -11,6 +11,7 @@ namespace CoderboxUtilities
     class Program
     {
         private static List<Computer> computers = new List<Computer>();
+        public Database db1 = new Database();
         static void Main(string[] args)
         {
             if (args.Contains("ip"))
@@ -26,6 +27,7 @@ namespace CoderboxUtilities
                         //Console.WriteLine("Address: " + curAddress.ToString());
                         //var newComputer = new Computer(server, curAddress);
                        computers.Add(new Computer(server, curAddress));
+                       
                     } //Console.WriteLine("Address: " + curAddress.ToString()); 
                 }
 
